@@ -3,7 +3,9 @@ Plugin for Cordova 3.0+ that allows you to show a loading spinner and a message 
 
 ## Adding the plugin to your project ##
 To install the plugin, use the Cordova CLI and enter the following:<br />
-`cordova plugin add https://github.com/YahiaRagae/cordova-activityindicator`
+`cordova plugin add https://github.com/YahiaRagae/cordova-activityindicator`<br />
+OR <br />
+`phonegap plugin add https://github.com/YahiaRagae/cordova-activityindicator`<br />
 
 ## Platforms ##
 - Android ( AndroidProgressHUD )
