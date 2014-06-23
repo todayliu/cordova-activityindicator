@@ -21,5 +21,5 @@ To hide the dialog, use the following code:<br />
 This plugin is inspired in the following projects:<br />
 https://github.com/jdg/MBProgressHUD<br />
 https://github.com/pebois/phonegap-plugin-ProgressHUD<br />
-https://github.com/bormansquirrel/WaitingDialog
+https://github.com/bormansquirrel/WaitingDialog<br />
 https://github.com/anupamdhanuka/AndroidProgressHUD
