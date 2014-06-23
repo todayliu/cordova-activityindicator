@@ -6,7 +6,7 @@ To install the plugin, use the Cordova CLI and enter the following:<br />
 `cordova plugin add https://github.com/Initsogar/cordova-activityindicator`
 
 ## Platforms ##
-- Android
+- Android ( AndroidProgressHUD )
 - iOS
 
 ## Use ##
@@ -22,3 +22,4 @@ This plugin is inspired in the following projects:<br />
 https://github.com/jdg/MBProgressHUD<br />
 https://github.com/pebois/phonegap-plugin-ProgressHUD<br />
 https://github.com/bormansquirrel/WaitingDialog
+https://github.com/anupamdhanuka/AndroidProgressHUD

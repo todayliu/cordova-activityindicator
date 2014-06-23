@@ -3,12 +3,12 @@ package org.apache.cordova.plugin;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
-import org.json.JSONException;
-import android.app.ProgressDialog;
+import org.json.JSONException; 
+import org.apache.cordova.plugin.AndroidProgressHUD;
 
 public class ActivityIndicator extends CordovaPlugin {
 
-	private ProgressDialog activityIndicator = null;
+	private AndroidProgressHUD activityIndicator = null;
 
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
@@ -30,8 +30,8 @@ public class ActivityIndicator extends CordovaPlugin {
 	 * This show the ProgressDialog
 	 * @param text - Message to display in the Progress Dialog
 	 */
-	public void show(String text) {
-		activityIndicator = ProgressDialog.show(this.cordova.getActivity(), "", text);
+	public void show(String text) { 
+		activityIndicator = AndroidProgressHUD.show(this.cordova.getActivity(), text,true,true,null);
 	}
 
 	/**
