@@ -3,10 +3,12 @@ Plugin for Cordova 3.0+ that allows you to show a loading spinner and a message 
 
 ## Adding the plugin to your project ##
 To install the plugin, use the Cordova CLI and enter the following:<br />
-`cordova plugin add https://github.com/Initsogar/cordova-activityindicator`
+`cordova plugin add https://github.com/YahiaRagae/cordova-activityindicator`<br />
+OR <br />
+`phonegap plugin add https://github.com/YahiaRagae/cordova-activityindicator`<br />
 
 ## Platforms ##
-- Android
+- Android ( AndroidProgressHUD )
 - iOS
 
 ## Use ##
@@ -21,4 +23,5 @@ To hide the dialog, use the following code:<br />
 This plugin is inspired in the following projects:<br />
 https://github.com/jdg/MBProgressHUD<br />
 https://github.com/pebois/phonegap-plugin-ProgressHUD<br />
-https://github.com/bormansquirrel/WaitingDialog
+https://github.com/bormansquirrel/WaitingDialog<br />
+https://github.com/anupamdhanuka/AndroidProgressHUD
