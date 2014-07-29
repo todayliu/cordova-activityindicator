@@ -25,15 +25,15 @@ public class AndroidProgressHUD extends Dialog {
 
 
 	public void onWindowFocusChanged(boolean hasFocus){
-	ImageView imageView = (ImageView) findViewById(context.getResources().getIdentifier("spinnerImageView", "id", "com.phonegap.helloworld"));
+	ImageView imageView = (ImageView) findViewById(context.getResources().getIdentifier("spinnerImageView", "id", context.getPackageName()));
         AnimationDrawable spinner = (AnimationDrawable) imageView.getBackground();
         spinner.start();
     }
 	
 	public void setMessage(CharSequence message) {
 		if(message != null && message.length() > 0) {
-			findViewById(context.getResources().getIdentifier("message", "id", "com.phonegap.helloworld")).setVisibility(View.VISIBLE);			
-			TextView txt = (TextView)findViewById(context.getResources().getIdentifier("message", "id", "com.phonegap.helloworld"));  
+			findViewById(context.getResources().getIdentifier("message", "id", context.getPackageName())).setVisibility(View.VISIBLE);			
+			TextView txt = (TextView)findViewById(context.getResources().getIdentifier("message", "id", context.getPackageName()));  
 			txt.setText(message);
 			txt.invalidate();
 		}
@@ -42,13 +42,13 @@ public class AndroidProgressHUD extends Dialog {
 	public static AndroidProgressHUD show(Context context, CharSequence message, boolean indeterminate, boolean cancelable,
 			OnCancelListener cancelListener) {
 					 //R.style.ProgressHUD
-		AndroidProgressHUD dialog = new AndroidProgressHUD(context,context.getResources().getIdentifier("ProgressHUD", "style", "com.phonegap.helloworld") );
+		AndroidProgressHUD dialog = new AndroidProgressHUD(context,context.getResources().getIdentifier("ProgressHUD", "style", context.getPackageName()) );
 		dialog.setTitle("");
-		dialog.setContentView(context.getResources().getIdentifier("progress_hud", "layout", "com.phonegap.helloworld"));
+		dialog.setContentView(context.getResources().getIdentifier("progress_hud", "layout", context.getPackageName()));
 		if(message == null || message.length() == 0) {
-			dialog.findViewById(context.getResources().getIdentifier("message", "id", "com.phonegap.helloworld")).setVisibility(View.GONE);			
+			dialog.findViewById(context.getResources().getIdentifier("message", "id", context.getPackageName())).setVisibility(View.GONE);			
 		} else {
-			TextView txt = (TextView)dialog.findViewById(context.getResources().getIdentifier("message", "id", "com.phonegap.helloworld") );
+			TextView txt = (TextView)dialog.findViewById(context.getResources().getIdentifier("message", "id", context.getPackageName()) );
 			txt.setText(message);
 		}
 		dialog.setCancelable(cancelable);
