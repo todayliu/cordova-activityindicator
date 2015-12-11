@@ -1,8 +1,8 @@
 var ActivityIndicator = {
     show: function (text,autocancel) {
     	text   = text || "Please wait...";
-    	var cancel = autocancel || true;  
-        cordova.exec(null, null, "ActivityIndicator", "show", [text,cancel]);
+    	autocancel = typeof(autocancel) === "undefined"?true:autocancel;
+        cordova.exec(null, null, "ActivityIndicator", "show", [text,autocancel]);
     },
     hide: function () {
         cordova.exec(null, null, "ActivityIndicator", "hide", []);
